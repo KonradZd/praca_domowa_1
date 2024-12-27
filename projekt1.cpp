@@ -25,7 +25,15 @@ int main() {
 	cout << "MENU" << endl;
 	cout << "Podaj numer czynnosci, ktora chcesz wkonac" << endl;
 	cout << "0. Wyjscie" << endl;
+	cout << "2. Sprawdz czy pierwsza" << endl;
 	cin >> wyjscie;
+	if(wyjscie == 2){
+	   if(czyPierwsza(b)){
+	       cout << "Tak, liczba " << b << " jest pierwsza" << endl;
+	   } else{
+	       cout << "Nie, liczba " << b << " nie jest pierwsza" << endl;
+	   }
+	}
     } while(wyjscie != 0);
     return 0;
 }
